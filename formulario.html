@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestão</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        
+        <nav class="nav">   
+            
+            <ul class="nav_itens">
+                
+                <input type="checkbox" id="sanduiche" value="&#9776;">
+                <label for="sanduiche" class="label_sanduiche">&#9776;</label>
+                
+                <li class="item_lista_nav"><a href="index.html" class="item_nav"><img src="assets/icon_home.png" class="icone" alt="Marcador de página em formato de bandeira, na cor vermelha">HOME</a></li>
+                <li class="item_lista_nav"><a href="lidos.html" class="item_nav"><img src="assets/icon.png" class="icone" alt="4 livros empilhados na vertical e um linho da frente deitado na horizontal">LIVROS</a></li>
+                <li class="item_lista_nav"><a href="lista.html" class="item_nav"><img src="assets/icon_lista.png" class="icone" alt="Um pergaminho aberto">LISTA</a></li>
+                <li class="item_lista_nav"><a href="autores.html" class="item_nav"><img src="assets/icon_autores.png" class="icone" alt="Um icone de um homem grego mais velho, com cabelos brancos e barba branca">AUTORES</a></li>
+                <li class="item_lista_nav"><a href="frases.html" class="item_nav"><img src="assets/icon_frases.png" class="icone" alt="Um papel com uma fita na parte de cima e uma na parte de baixo, o colando em alguma superfície">FRASES</a></li>
+                <li class="item_lista_nav"><a href="formulario.html" class="item_nav"><img src="assets/icon_form.png" class="icone" alt="Uma lista com um lápis escrevendo nela">SUGESTÃO</a></li>
+            
+            </ul>
+
+        </nav>
+        
+        <h1 class="titulo_header">Envie sua sugestão</h1>
+
+    </header>
+
+    <main class="main_espaco_formulario">
+
+        <form class="area_conteudo_formulario" method="get" action="mailto:luis.aguiar@aluno.ifsp.edu.br">
+
+            <fieldset>
+                
+                <legend>Sugestão de Livro</legend>
+
+                <label for="nome" class="elemento">Nome completo:</label>
+                <input type="text" id="nome" name="Nome" value="" class="elemento" required>
+
+                <label for="idade" class="elemento">Idade:</label>
+                <input type="number" id="idade" name="Idade" value="" class="elemento" required>
+                
+                <label for="titulo" class="elemento">Título do livro:</label>
+                <input type="text" id="titulo" name="Titulo" value="" class="elemento" required>
+
+                <label for="autor" class="elemento">Autor:</label>
+                <input type="text" id="autor" name="Autor" value="" class="elemento" required>
+
+                <label for="paginas" class="elemento">Numero de páginas</label>
+                <input type="number" id="paginas" name="Páginas" value="" class="elemento" required>
+
+                <label for="genero" class="elemento">Gênero:</label>
+                <select name="genero" id="genero" class="elemento" required>
+                    <option value="romance">Romance</option>
+                    <option value="fantasia">Fantasia</option>
+                    <option value="ficcao-cientifica">Ficção Científica</option>
+                    <option value="suspense">Suspense</option>
+                    <option value="biografia">Biografia</option>
+                    <option value="historia">História</option>
+                    <option value="divulg_cientifica">Divulgação Científica</option>
+                    <option value="filosofia">Filosofia</option>
+                </select>
+
+                <label for="resumo" class="elemento">Resumo do livro:</label>
+                <textarea name="Resumo" id="resumo" cols="5" rows="5" class="elemento"></textarea required>
+
+                <label for="opiniao" class="elemento">Sua opinião sobre o livro:</label>
+                <textarea name="opiniao" id="opiniao" cols="5" rows="5" class="elemento"></textarea required>
+
+                <input type="submit" value="Enviar" class="elemento botao">
+                                
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer>
+                    
+        <p class="texto_footer">Desenvolvido por: Luis Henrique Aguiar</p>
+        <p class="texto_footer">&copy;Todos os direitos reservados.</p>
+
+    </footer>
+
+</body>
+</html>
